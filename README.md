@@ -27,7 +27,7 @@ A modern and interactive Image Gallery built using **HTML, CSS, and JavaScript**
 
 ## 📸 Project Preview
 
-![Image Gallery Preview](./Picture.png)
+![Image Gallery Preview](./Image%20Gallery/Picture.png)
 
 ## 📂 Project Structure
 
