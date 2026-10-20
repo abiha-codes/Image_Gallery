@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+/* Filter Buttons */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.filters button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.filters button:hover,
+.filters button.active {
+    background: #ee0899;
+    transform: translateY(-3px);
+}
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.image {
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+} 
+
+.image:hover {
+    transform: translateY(-8px);
+}
+
+.image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.image:hover img {
+    transform: scale(1.12);
+    filter: brightness(70%);
+}
+
+/* Lightbox */
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.lightbox img {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.close,
+.prev,
+.next {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.close {
+    top: 20px;
+    right: 30px;
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .lightbox img {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .filters button {
+        width: 100%;
+    }
+
+    .image img {
+        height: 220px;
+    }
+}

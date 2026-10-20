@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Image Gallery</h1>
+
+        <!-- Filter Buttons -->
+
+        <div class="filters">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="nature">Nature</button>
+            <button data-filter="city">City</button>
+            <button data-filter="animals">Animals</button>
+        </div>
+
+
+        <!-- Gallery -->
+        <div class="gallery">
+
+            <div class="image nature">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="Nature">
+            </div>
+
+            <div class="image city">
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop" alt="City">
+            </div>
+
+            <div class="image animals">
+                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop" alt="Animal">
+            </div>
+
+            <div class="image nature">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200&auto=format&fit=crop" alt="Nature">
+            </div>
+
+            <div class="image city">
+                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1200&auto=format&fit=crop" alt="City">
+            </div>
+
+            <div class="image animals">
+                <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=1200&auto=format&fit=crop" alt="Animal">
+            </div>
+        
+            <div class="image city">
+                <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1200&auto=format&fit=crop" alt="City">
+            </div>
+
+            <div class="image nature">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop" alt="Nature">
+            </div>
+
+            <div class="image nature">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Nature">
+            </div>
+
+             <div class="image animals">
+                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=1200&auto=format&fit=crop" alt="Animal">
+            </div>
+
+             <div class="image animals">
+                <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=1200&auto=format&fit=crop" alt="Animal">
+            </div>
+
+            <div class="image city">
+                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1200&auto=format&fit=crop" alt="City">
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- Lightbox -->
+     
+    <div class="lightbox">
+        <span class="close">&times;</span>
+        <span class="prev">&#10094;</span>
+        <img class="lightbox-img" src="" alt="">
+        <span class="next">&#10095;</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
